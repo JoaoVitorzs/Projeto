@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    height: 100vh;
 }
 
 #container {
@@ -120,12 +121,12 @@ footer {
     background: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size:cover
+    background-size:cover;
 }
 
 .light ul li a:hover{
     background: var(--surface-color-glauber);
-    border: 1.5px solid var(--surface-color-glauber)
+    border: 1.5px solid var(--surface-color-glauber);
 }
 
 .light #social a:hover{
@@ -143,19 +144,19 @@ footer {
     top: 50%;
     left: 0;
     z-index: 1;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
     animation: slide-out 0.2s forwards;
+
+
 }
 
 #switch span{
-display: block;
+display:block;
 width: 64px;
 height: 24px;
-/* surface-color-dark-mode */
 background: var(--surface-color);
 border: var(--stroke-color);
 border-radius: 999px;
-/*stroke-color-dark-mode*/
 }
 
 #switch {
@@ -168,15 +169,15 @@ border-radius: 999px;
 .light #switch {
  background: var(--stroke-color);
  border-radius: 999px;
- display:flex;
+ display: flex;
  margin: 0 auto
  }
 
-.light #switch button {
+ .light #switch button {
 animation: slide-in 0.2s forwards;
  }
 
-@media (min-width: 700px) {
+ @media (min-width: 700px) {
 :root {
     --bg-url: url(./assets/bg-desktop.jpg)
 }
@@ -209,6 +210,3 @@ to {
 
  #switch button:hover {
 outline: 8px solid rgba(255,255,255,0.2);}
-
-
- 
